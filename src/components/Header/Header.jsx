@@ -5,9 +5,9 @@ import './Header.css'
 const Header = () => {
     return (
         <div>
-            <nav className='flex justify-around items-center mt-6'>
+            <nav className='lg:flex justify-around items-center px-4 mt-6 '>
                 <h1 className='text-4xl font-semibold'>Job Hunts</h1>
-                <div>
+                <div className='sm:py-2'>
                     <Link to="/">Home</Link>
                     <Link to="statistics">Statistics</Link>
                     <Link to="/">Applied Job</Link>

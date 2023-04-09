@@ -14,7 +14,7 @@ const Categories = () => {
             <h1 className="text-center text-4xl">Job Category List</h1>
             <p className="text-center p-3">Explore thousands of job opportunities with all the information you need. Its your future</p>
         </div>
-      <div className="flex  justify-around mt-3 mb-10 ">
+      <div className="grid lg:grid-cols-4 gap-16 mx-16 my-10 ">
       {data.map((item) => (
         
         <div className="bg-slate-300 p-5">

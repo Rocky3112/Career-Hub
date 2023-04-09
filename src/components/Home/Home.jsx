@@ -8,7 +8,7 @@ import Jobs from '../Jobs/Jobs';
 const Home = () => {
     return (
         <div>
-            <div className='flex'>
+            <div className='grid lg:grid-cols-2'>
             <div className='p-20'>
                 <h1 className='text-6xl '>One Step <br /> Closer To Your <br /> <span className='text-purple-700'>Dream Job</span></h1>
                 <p className='pt-3 pb-3'>Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.</p>
