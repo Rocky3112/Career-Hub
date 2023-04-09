@@ -1,25 +1,25 @@
 [
     {
       "id": 1,
-      "img": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fsoftware-engineer_5696360&psig=AOvVaw2qWVq0cDkRHCQoREFvCeQa&ust=1681147328743000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCLDa5Pynnf4CFQAAAAAdAAAAABAE",
+      "img": "https://cdn-icons-png.flaticon.com/512/5696/5696360.png",
       "title": "Software Engineer",
       "totalJob": 50
     },
     {
       "id": 2,
-      "img": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterstock.com%2Fimage-vector%2Fbusiness-marketing-manager-icon-check-sign-1494560387&psig=AOvVaw3cAmo-7UR--1ngWAA3wwwh&ust=1681147436016000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCNjt1rConf4CFQAAAAAdAAAAABAE",
+      "img": "https://www.shutterstock.com/image-vector/business-marketing-manager-icon-check-260nw-1494560387.jpg",
       "title": "Marketing Manager",
       "totalJob": 20
     },
     {
       "id": 3,
-      "img": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fgraphic-designer_478345&psig=AOvVaw3TdvloVOCTFZ1FunPGpKvg&ust=1681147477271000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCLDphMSonf4CFQAAAAAdAAAAABAE",
+      "img": "https://cdn-icons-png.flaticon.com/512/478/478345.png",
       "title": "Graphic Designer",
       "totalJob": 35
     },
     {
       "id": 4,
-      "img": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fcustomer-service-representative_6334422&psig=AOvVaw03ok61_f6BZFEZaEH7zAXA&ust=1681147514555000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCPDMmdWonf4CFQAAAAAdAAAAABAE",
+      "img": "https://th.bing.com/th?q=Customer%20Service%20Support&w=120&h=120&c=1&rs=1&qlt=90&cb=1&pid=InlineBlock&mkt=en-WW&cc=BD&setlang=en&adlt=strict&t=1&mw=247&fbclid=IwAR22KfNeaXrgCUu_mUIo7e0aAgS6X1GeQlr7bjBSYZVInPjNkomiR2o3tFg",
       "title": "Customer Support Specialist",
       "totalJob": 10
     }

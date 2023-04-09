@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "logo": "https://cdn.example.com/images/logo1.png",
+      "jobName": "Web Developer",
+      "companyName": "ABC Inc.",
+      "location": "New York",
+      "salary": "$80,000 - $100,000"
+    },
+    {
+      "id": 2,
+      "logo": "https://cdn.example.com/images/logo2.png",
+      "jobName": "Software Engineer",
+      "companyName": "XYZ Corp.",
+      "location": "San Francisco",
+      "salary": "$100,000 - $120,000"
+    },
+    {
+      "id": 3,
+      "logo": "https://cdn.example.com/images/logo3.png",
+      "jobName": "Product Manager",
+      "companyName": "123 Co.",
+      "location": "London",
+      "salary": "£60,000 - £80,000"
+    },
+    {
+      "id": 4,
+      "logo": "https://cdn.example.com/images/logo4.png",
+      "jobName": "Marketing Manager",
+      "companyName": "MarketingPro",
+      "location": "Chicago",
+      "salary": "$90,000 - $110,000"
+    },
+    {
+      "id": 5,
+      "logo": "https://cdn.example.com/images/logo5.png",
+      "jobName": "Graphic Designer",
+      "companyName": "DesignCo",
+      "location": "Los Angeles",
+      "salary": "$60,000 - $80,000"
+    },
+    {
+      "id": 6,
+      "logo": "https://cdn.example.com/images/logo6.png",
+      "jobName": "Data Scientist",
+      "companyName": "DataPro",
+      "location": "Boston",
+      "salary": "$120,000 - $140,000"
+    }
+  ]
+  
