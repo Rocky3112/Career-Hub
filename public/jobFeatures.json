@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "logo": "https://cdn.example.com/images/logo1.png",
+      "logo": "https://t4.ftcdn.net/jpg/05/37/30/13/360_F_537301346_O0Hz0IkPNdoGxI0sCPD0m3yR815dSdIK.jpg",
       "jobName": "Web Developer",
       "companyName": "ABC Inc.",
       "location": "New York",
@@ -9,7 +9,7 @@
     },
     {
       "id": 2,
-      "logo": "https://cdn.example.com/images/logo2.png",
+      "logo": "https://www.shutterstock.com/image-vector/abstract-modern-monogram-xyz-letter-260nw-1281772879.jpg",
       "jobName": "Software Engineer",
       "companyName": "XYZ Corp.",
       "location": "San Francisco",
@@ -17,7 +17,7 @@
     },
     {
       "id": 3,
-      "logo": "https://cdn.example.com/images/logo3.png",
+      "logo": "https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/v1416923828/zbavxorhkanygkk5euij.png",
       "jobName": "Product Manager",
       "companyName": "123 Co.",
       "location": "London",
@@ -25,7 +25,7 @@
     },
     {
       "id": 4,
-      "logo": "https://cdn.example.com/images/logo4.png",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXdenzCAgbqLNOhd0Nsef83Pbhy5Kunk5Q0Czf-II3CA&s",
       "jobName": "Marketing Manager",
       "companyName": "MarketingPro",
       "location": "Chicago",
@@ -33,7 +33,7 @@
     },
     {
       "id": 5,
-      "logo": "https://cdn.example.com/images/logo5.png",
+      "logo": "https://media.licdn.com/dms/image/C560BAQH-7BYdCWBNmA/company-logo_200_200/0/1589603595297?e=2147483647&v=beta&t=87UyV755b3fWiysmH93mMke2L6PmcHdSHRgqenEpAGo",
       "jobName": "Graphic Designer",
       "companyName": "DesignCo",
       "location": "Los Angeles",
@@ -41,7 +41,7 @@
     },
     {
       "id": 6,
-      "logo": "https://cdn.example.com/images/logo6.png",
+      "logo": "https://static.wixstatic.com/media/d52922_1a2df888a52145efa01f84ac27c03e8b~mv2.png/v1/fill/w_320,h_94,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Logo%20Datapro%202022-01.png",
       "jobName": "Data Scientist",
       "companyName": "DataPro",
       "location": "Boston",

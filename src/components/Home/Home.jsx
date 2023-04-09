@@ -3,6 +3,7 @@ import image from '../../../images/herosmall-employees.png'
 import './Home.css'
 import Statistics from '../../Statistics/Statistics';
 import Categories from '../Categories/Categories';
+import Jobs from '../Jobs/Jobs';
 
 const Home = () => {
     return (
@@ -18,6 +19,7 @@ const Home = () => {
             </div>
         </div>
         <Categories></Categories>
+        <Jobs></Jobs>
         </div>
     );
 };
