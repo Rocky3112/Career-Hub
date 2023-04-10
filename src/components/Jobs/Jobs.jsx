@@ -38,6 +38,7 @@ const Jobs = () => {
             <button className='border border-purple-600 mr-3 text-purple-800 font-medium py-2 px-3 rounded'>Remote</button>
             <button className='border border-purple-600 mr-3 text-purple-800 font-medium py-2 px-3 rounded '>Full Time</button>
             <p className='py-2 '><span className='pr-3'>{item.location}</span> <span>{item.salary}</span></p>
+            
             <button className='bg-purple-500 p-2 rounded-lg text-white' onClick={()=> handleView(item.id)}>View Details</button>
             
         </div>

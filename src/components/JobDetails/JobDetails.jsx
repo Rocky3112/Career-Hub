@@ -4,15 +4,21 @@ import { useLoaderData, useParams } from 'react-router-dom';
 import jobData from '../jobData'
 
 const JobDetails = () => {
-    
-    const [details, setDetails] = useState([])
-    const {id} = useParams();
-    useEffect( ()=>{
-       const data = jobData.filter(jd => jd.id === parseInt(id))
-       setDetails(data[0])
-    }, [id])
-console.log(details)
+    const [details,setDetails]=useState([])
+const jobs=useLoaderData();
+console.log(jobs)
+const dynamik=useParams();
+let dynamikId=dynamik.jobId
+    useEffect(()=>{
+        if(jobs){  
+        const singleJob=jobs.find(job=>job.id==dynamikId)
+        // console.log(singleJob)
+        setDetails(singleJob)
+    }
+        
+},[])
     return (
+        
         <div className=' grid grid-cols-2 px-10 my-20'>
             <div className='px-10'>
                 <h2 className='py-2'><span className='text-xl font-semibold'>Job Description: </span>{details.jobDescription}</h2>
