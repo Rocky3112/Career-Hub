@@ -11,7 +11,7 @@ const Header = () => {
                     <Link to="/">Home</Link>
                     <Link to="statistics">Statistics</Link>
                     <Link to="/">Applied Job</Link>
-                    <Link to="/">Blog</Link>
+                    <Link to="blog">Blog</Link>
                 </div>
                 <button className='bg-purple-700 py-3 px-4 text-lg text-white rounded-lg'>Start Applying</button>
             </nav>
