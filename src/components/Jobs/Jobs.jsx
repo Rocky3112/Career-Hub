@@ -1,15 +1,26 @@
 import React, { useEffect, useState } from 'react';
+import { useLoaderData, useNavigate } from 'react-router-dom';
+
 
 
 const Jobs = () => {
 
     const [data, setData] = useState([]);
+    const navigate = useNavigate();
 
   useEffect(() => {
     fetch("jobFeatures.json")
       .then((response) => response.json())
       .then((data) => setData(data));
   }, []);
+//  const data = useLoaderData()
+//  console.log(data)
+ 
+  const handleView = (id)=>{
+    navigate(`jobDetails/${id}`)
+    
+
+  }
     return (
         <div>
             <div className="pt-10">
@@ -27,7 +38,7 @@ const Jobs = () => {
             <button className='border border-purple-600 mr-3 text-purple-800 font-medium p-1 rounded'>Remote</button>
             <button className='border border-purple-600 mr-3 text-purple-800 font-medium p-1 rounded '>Full Time</button>
             <p className='py-2'><span>{item.location}</span> <span>{item.salary}</span></p>
-            <button className='bg-purple-500 p-2 rounded-lg text-white'>View Details</button>
+            <button className='bg-purple-500 p-2 rounded-lg text-white' onClick={()=> handleView(item.id)}>View Details</button>
             
         </div>
       ))}

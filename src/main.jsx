@@ -9,6 +9,7 @@ import {
 import Home from './components/Home/Home';
 import Main from './Layout/Main';
 import Statistics from './Statistics/Statistics';
+import JobDetails from './components/JobDetails/JobDetails';
 
 const router = createBrowserRouter([
   {
@@ -17,11 +18,17 @@ const router = createBrowserRouter([
     children: [
       {
         path:'/',
-        element:<Home></Home>
+        element:<Home></Home>,
+        // loader:()=>fetch('jobFeatures.json')
+        
       },
       {
         path:'statistics',
         element:<Statistics></Statistics>
+      },
+      {
+        path:'jobDetails/:id',
+        element:<JobDetails></JobDetails>
       },
     ]
   }

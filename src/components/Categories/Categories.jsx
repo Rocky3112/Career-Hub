@@ -15,11 +15,11 @@ const Categories = () => {
             <p className="text-center p-3">Explore thousands of job opportunities with all the information you need. Its your future</p>
         </div>
       <div className="grid lg:grid-cols-4 gap-16 mx-16 my-10 ">
-      {data.map((item) => (
+      {data.map((item, index) => (
         
-        <div className="bg-slate-300 p-5">
+        <div key={index} className="bg-slate-200 p-5">
             <img className="w-16" src={item.img} />
-            <p key={item.id}>{item.title}</p>
+            <p >{item.title}</p>
             <p>{item.totalJob} job</p>
         </div>
       ))}
