@@ -17,7 +17,7 @@ const Categories = () => {
       <div className="grid lg:grid-cols-4 gap-16 mx-16 my-10 ">
       {data.map((item, index) => (
         
-        <div key={index} className="bg-slate-200 p-5">
+        <div key={index} className="bg-slate-200 p-5 rounded-lg">
             <img className="w-16" src={item.img} />
             <p >{item.title}</p>
             <p>{item.totalJob} job</p>

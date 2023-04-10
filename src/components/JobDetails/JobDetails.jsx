@@ -13,20 +13,23 @@ const JobDetails = () => {
     }, [id])
 console.log(details)
     return (
-        <div className=' grid grid-cols-2 px-10 mt-20'>
+        <div className=' grid grid-cols-2 px-10 my-20'>
             <div className='px-10'>
                 <h2 className='py-2'><span className='text-xl font-semibold'>Job Description: </span>{details.jobDescription}</h2>
-                <p>{details.responsibilities}</p>
-                <p>{details.educationalRequirements}</p>
-                <p>{details.experience}</p>
+                <p className='py-2'><span className='text-xl font-semibold'>Responsibilities: </span>{details.responsibilities}</p>
+                <p className='py-2'><span className='text-xl font-semibold'>Educational Requirements: </span>{details.educationalRequirements}</p>
+                <p className='py-2'><span className='text-xl font-semibold'>Experiences: <br /></span>{details.experience}</p>
             </div>
             <div className=' bg-slate-200 mr-48 p-10 rounded-lg'>
-                <h1 className='text-2xl font-semibold'>Job Details</h1>
-                <p>{details.jobName}</p>
-                <p>{details.salary}</p>
+                <h1 className='text-2xl font-semibold pb-2'>Job Details</h1>
+                <p><span className='text-md font-semibold '>Salary: </span>{details.salary} (per month)</p>
+                <p><span className='text-md font-semibold'>Job-title: </span>{details.jobName}</p>
                 <h1 className='text-2xl font-semibold py-4'>Contact Information</h1>
+                <p><span className='text-md font-semibold'>Phone: </span>{details.Phone}</p>
+                <p><span className='text-md font-semibold'>Email: </span>{details.Email}</p>
                 <p>{details.location}</p>
-                <button className=' bg-purple-700 p-3 rounded-lg text-white mt-16'>Apply Now</button>
+                
+                <button className=' bg-purple-700 py-3 px-28 rounded-lg text-white mt-16 text-xl'>Apply Now</button>
             </div>
         </div>
     );

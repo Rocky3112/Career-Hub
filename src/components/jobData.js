@@ -6,6 +6,8 @@ const jobData = [
         companyName: "ABC Inc.",
         location: "New York",
         salary: "$80,000 - $100,000",
+        Phone : "01750-00 00 00",
+        Email :"rocky@gmail.com",
         jobDescription: "Software Engineer",
         responsibilities: "Design, develop, and maintain software applications using modern programming languages,Collaborate with cross-functional teams to deliver high-quality software products,Ensure that software applications meet functional and non-functional requirements, Write clean, efficient, and well-documented code,Participate in code reviews and provide constructive feedback"
 ,
@@ -20,6 +22,8 @@ const jobData = [
         companyName: "XYZ Corp.",
         location: "San Francisco",
         salary: "$100,000 - $120,000",
+        Phone : "01750-00 00 00",
+        Email :"rocky@gmail.com",
         jobDescription: "Data Scientist",
     responsibilities:
       "Collect, process, and analyze large datasets using statistical and machine learning techniques.Collaborate with cross-functional teams to develop and deploy data-driven solutions.Communicate insights and recommendations to stakeholders in a clear and concise manner.Ensure that data-driven solutions meet functional and non-functional requirements"
@@ -35,6 +39,8 @@ const jobData = [
         companyName: "123 Co.",
         location: "London",
         salary: "£60,000 - £80,000",
+        Phone : "01750-00 00 00",
+        Email :"rocky@gmail.com",
         jobDescription: "Product Manager",
     responsibilities:
       "Collect, process, and analyze large datasets using statistical and machine learning techniques.Collaborate with cross-functional teams to develop and deploy data-driven solutions.Communicate insights and recommendations to stakeholders in a clear and concise manner.Ensure that data-driven solutions meet functional and non-functional requirements"
@@ -50,6 +56,8 @@ const jobData = [
         companyName: "MarketingPro",
         location: "Chicago",
         salary: "$90,000 - $110,000",
+        Phone : "01750-00 00 00",
+        Email :"rocky@gmail.com",
         jobDescription: "Marketing Manager",
     responsibilities:
       "Collect, process, and analyze large datasets using statistical and machine learning techniques.Collaborate with cross-functional teams to develop and deploy data-driven solutions.Communicate insights and recommendations to stakeholders in a clear and concise manner.Ensure that data-driven solutions meet functional and non-functional requirements"
@@ -65,6 +73,8 @@ const jobData = [
         companyName: "DesignCo",
         location: "Los Angeles",
         salary: "$60,000 - $80,000",
+        Phone : "01750-00 00 00",
+        Email :"rocky@gmail.com",
         jobDescription: "Graphic Designer",
     responsibilities:
       "Collect, process, and analyze large datasets using statistical and machine learning techniques.Collaborate with cross-functional teams to develop and deploy data-driven solutions.Communicate insights and recommendations to stakeholders in a clear and concise manner.Ensure that data-driven solutions meet functional and non-functional requirements"
@@ -80,6 +90,8 @@ const jobData = [
         companyName: "DataPro",
         location: "Boston",
         salary: "$120,000 - $140,000",
+        Phone : "01750-00 00 00",
+        Email :"rocky@gmail.com",
         jobDescription: "Data Scientist",
     responsibilities:
       "Collect, process, and analyze large datasets using statistical and machine learning techniques.Collaborate with cross-functional teams to develop and deploy data-driven solutions.Communicate insights and recommendations to stakeholders in a clear and concise manner.Ensure that data-driven solutions meet functional and non-functional requirements"
