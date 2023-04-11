@@ -8,6 +8,12 @@ const Jobs = () => {
     const [data, setData] = useState([]);
     const navigate = useNavigate();
 
+    const [seeAll, setSeeAll] = useState(false)
+
+    const handleSeeAll =() =>{
+      setSeeAll(true);
+    }
+
   useEffect(() => {
     fetch("jobFeatures.json")
       .then((response) => response.json())
@@ -29,7 +35,7 @@ const Jobs = () => {
         </div>
       <div className="grid lg:grid-cols-2 m-10 p-5 gap-4">
       {
-      data.map((item) => (
+      data.slice(0, seeAll ? 6 : 4).map((item) => (
         
         <div className="border border-slate-500 p-5">
             <img className="w-28 rounded" src={item.logo} />
@@ -38,11 +44,16 @@ const Jobs = () => {
             <button className='border border-purple-600 mr-3 text-purple-800 font-medium py-2 px-3 rounded'>Remote</button>
             <button className='border border-purple-600 mr-3 text-purple-800 font-medium py-2 px-3 rounded '>Full Time</button>
             <p className='py-2 '><span className='pr-3'>{item.location}</span> <span>{item.salary}</span></p>
-            
+
             <button className='bg-purple-500 p-2 rounded-lg text-white' onClick={()=> handleView(item.id)}>View Details</button>
             
         </div>
       ))}
+      </div>
+      <div className='text-center'>
+      {
+        !seeAll &&(<button onClick={handleSeeAll}  className='bg-purple-500 p-2 rounded-lg text-white mb-10'>See All Jobs</button>)
+      }
       </div>
 
         </div>
