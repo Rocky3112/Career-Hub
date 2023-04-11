@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { useLoaderData, useParams } from "react-router-dom";
+import { useLoaderData, useNavigate, useParams } from "react-router-dom";
+import { addToDb } from "../../utility/fakeDB";
 
-import jobData from "../jobData";
 
-const JobDetails = () => {
+
+const JobDetails = ({handleAppliedJob}) => {
   const [details, setDetails] = useState([]);
   const jobs = useLoaderData();
+ 
 //   console.log(jobs);
   const jobData = useParams();
   let jobId = jobData.jobId;
@@ -14,10 +16,19 @@ const JobDetails = () => {
       const singleJob = jobs.find((job) => job.id == jobId);
       // console.log(singleJob)
       setDetails(singleJob);
+        
     }
   }, []);
+
+
+  const handleAppliedJobs=(id)=>{
+    // console.log(id)
+    addToDb(id)
+    
+    
+  }
   return (
-    <div className=" grid grid-cols-2 px-10 my-20">
+    <div className=" grid lg:grid-cols-2 px-10 my-20">
       <div className="px-10">
         <h2 className="py-2">
           <span className="text-xl font-semibold">Job Description: </span>
@@ -61,7 +72,9 @@ const JobDetails = () => {
         </p>
         <p>{details.location}</p>
 
-        <button className=" bg-purple-700 py-3 px-28 rounded-lg text-white mt-16 text-xl">
+        <button className=" bg-purple-700 py-3 px-28 rounded-lg text-white mt-16 text-xl"
+        onClick={()=> handleAppliedJobs(details.id)}
+        >
           Apply Now
         </button>
       </div>

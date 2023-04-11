@@ -39,10 +39,10 @@ const Jobs = () => {
         
         <div className="border border-slate-500 p-5">
             <img className="w-28 rounded" src={item.logo} />
-            <h2 key={item.id}>{item.jobName}</h2>
+            <h2 >{item.jobName}</h2>
             <p className='py-2'>{item.companyName}</p>
-            <button className='border border-purple-600 mr-3 text-purple-800 font-medium py-2 px-3 rounded'>Remote</button>
-            <button className='border border-purple-600 mr-3 text-purple-800 font-medium py-2 px-3 rounded '>Full Time</button>
+            <button className='border border-purple-600 mr-3 text-purple-800 font-medium py-2 px-3 rounded'>{item.jobBase}</button>
+            <button className='border border-purple-600 mr-3 text-purple-800 font-medium py-2 px-3 rounded '>{item.jobType}</button>
             <p className='py-2 '><span className='pr-3'>{item.location}</span> <span>{item.salary}</span></p>
 
             <button className='bg-purple-500 p-2 rounded-lg text-white' onClick={()=> handleView(item.id)}>View Details</button>
