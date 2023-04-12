@@ -23,3 +23,7 @@ Navigate to the project directory in your terminal.
 Run npm install to install the dependencies.
 Run npm start to start the development server.
 Open your web browser and navigate to http://localhost:5173/.
+
+
+##live site Link
+https://astounding-kitten-fe1da6.netlify.app
