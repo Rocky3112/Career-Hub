@@ -1,25 +1,40 @@
 import React, { useEffect, useState } from "react";
 import JobDetails from "../JobDetails/JobDetails";
 import { useLoaderData } from "react-router-dom";
+import { getStoredCart } from "../../utility/fakeDB";
 
 const AppliedJobs = () => {
-  //   const [data, setData] = useState([]);
+    const { AppliedData,  } = useLoaderData();
+  
+    const savedJobs =[];
+    const applyData = getStoredCart()
+    // console.log(applyData)
+    for(const id in applyData){
+        const jobAdd = AppliedData.find(job => job.id ==id)
+        savedJobs.push(jobAdd);
+    }
+    // console.log(savedJobs);
+    const [remote, setRemote] = useState(savedJobs)
+    const btnRemote =()=>{
+        const remoteJob =savedJobs.filter(job =>job.jobBase =='Remote')
+        setRemote(remoteJob)
+    }
+    const btnOnsite =()=>{
+        const onsiteJob =savedJobs.filter(job =>job.jobBase =='Onsite')
+        setRemote(onsiteJob)
+    }
 
-  const { AppliedData } = useLoaderData();
-  //   console.log(AppliedData);
-
-  //   useEffect(() => {}, []);
   return (
     <div>
       <div className=" text-end mr-52 mt-20 font-semibold">
-        <button className="px-3 py-2 border border-purple-700 text-purple-700 rounded-xl mr-3">
+        <button onClick={btnRemote} className="px-3 py-2 border border-purple-700 text-purple-700 rounded-xl mr-3">
           Remote
         </button>
-        <button className="px-3 py-2 border border-purple-700 text-purple-700 rounded-xl">
+        <button onClick={btnOnsite} className="px-3 py-2 border border-purple-700 text-purple-700 rounded-xl">
           On-site
         </button>
       </div>
-      {AppliedData.map((item) => (
+      {remote.map((item) => (
         <div key={item.id}>
           <div className="flex justify-between items-center mx-48 rounded-lg my-10 border border-slate-300 p-2">
             <div className="flex ">
