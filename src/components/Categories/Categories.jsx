@@ -20,7 +20,7 @@ const Categories = () => {
         <div key={index} className="bg-slate-200 p-5 rounded-lg">
             <img className="w-16" src={item.img} />
             <p >{item.title}</p>
-            <p>{item.totalJob} job</p>
+            <p>{item.totalJob} job Avalible</p>
         </div>
       ))}
       </div>
